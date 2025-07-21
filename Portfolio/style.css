@@ -1,0 +1,431 @@
+ /* body style */
+
+body{
+  background-color: #000000;
+  color:white;
+}
+
+/* home page style */
+
+.home-page{
+  position : relative;
+  width:100%;
+  height:100vh;
+  background-color: #000000;
+  overflow:hidden;
+}
+.main-container1{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 100%;
+  z-index: 1;
+}
+.profile-child{
+  width:40%;
+  height:500px;
+  border-radius:50px;
+  background-color: transparent;
+  overflow:hidden;
+}
+.home, .about, .project, .contact{
+  width:40px;
+  height:40px;
+  border-radius:100px;
+  background-color:#FFFFFF;
+  margin:10px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.details-child,.nav-child, .profile-child{
+ display:flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content:center;
+}
+.details-child{
+  width:50%;
+  text-align:center;
+  color:#FFFFFF;
+}
+.nav-child{
+  display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 120px;
+}
+.profile-child img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+.home img, .about img, .project img, .contact img{
+ width: 55%;
+ object-fit: cover;
+}
+.home a, .about a, .project a, .contact a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    overflow: visible;
+}
+.nav-label {
+    position: absolute;
+    right: 50px; /* starts hidden outside the circle */
+    opacity: 0;
+    background-color: #e9967a;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    pointer-events: none; /* label does not block clicks */
+}
+.home :hover .nav-label, .about :hover .nav-label, .project :hover .nav-label, .contact a:hover .nav-label {
+    right: 55px;  /* slides further outward */
+    opacity: 1;  /* fades in */
+}
+
+.home-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #e9967a;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        60% 100%,
+        0% 100%
+    );
+    z-index: 0; /* stay behind content */
+}
+
+/* about page style */
+
+.about-page{
+   color:white;
+   padding: 40px 0;
+}
+.about-page h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-container2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.about-child1{
+  width:90%;
+  max-width:800px;
+}
+.personal-info,project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personal-info h4 {
+  margin-bottom: 15px;
+}
+h4,h2{
+text-align:center;
+}
+.person-detail {
+  border-collapse: separate;
+  border-spacing: 15px 10px; /* neat spacing between columns and rows */
+}
+.person-detail td {
+  padding-left: 10px;
+}
+.circle1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    yellow 0deg 260deg,
+    white 260deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  overflow: hidden; /* ensures clean circle */
+}
+.circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    yellow 0deg 180deg,
+    white 180deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  overflow: hidden; /* ensures clean circle */
+}
+.circle3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    yellow 0deg 160deg,
+    white 160deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  overflow: hidden; /* ensures clean circle */
+}
+.circle4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    yellow 0deg 300deg,
+    white 300deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  overflow: hidden; /* ensures clean circle */
+}
+.circle5 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    yellow 0deg 150deg,
+    white 150deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  overflow: hidden; /* ensures clean circle */
+}
+.circle6 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    yellow 0deg 200deg,
+    white 200deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  overflow: hidden; /* ensures clean circle */
+}
+.inner-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000000; /* inner black */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.circle-text {
+  position: relative;
+  z-index: 1; /* ensure text appears above inner-circle */
+}
+
+.skill-container{
+  display:flex;
+  justify-content:space-around;
+}
+.education1{
+  width: 30px;
+  height:30px;
+  border-radius:50%;
+  background-color:  #e9967a;
+  position: relative;
+  z-index: 1;
+}
+.year{
+ width:auto;
+ padding: 5px 15px;
+ border-radius:20px;
+ background-color:white;
+ text-align: center;
+ margin-bottom: 10px;
+}
+.edu-year{
+  color:black;
+  font-weight:bold;
+}
+.edu-container{
+  display:flex;
+  justify-content:center;
+  align-items: flex-start;
+  margin: 20px 0;
+  gap: 20px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line {
+    width: 1px;
+    height: 80px; /* adjust as needed to match your table height */
+    background-color:#778899;
+    margin-top: 0; /* align immediately below the circle */
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+table {
+    color: white;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 3px 0;
+}
+.contact-container{
+  display:flex;
+}
+.contact-child1{
+  width:30%;
+}
+.contact-child2{
+  width:70%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.inner-cont-child{
+  display:flex;
+
+}
+.input-feild{
+  margin:10px;
+  height:30px;
+  border-radius:20px;
+  background-color:#808080;
+}
+.contact-msg{
+  margin:10px;
+  width:80%;
+  height:200px;
+  border-radius:20px;
+  background-color:#808080;
+}
+.contact-sub{
+  margin:10px;
+  width:80%;
+  height:50px;
+  border-radius:20px;
+  background-color:#808080;
+}
+.address-container{
+  display:flex;
+}
+.address-icon{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+/* end contact section */
+
+/* project section */
+.project-section-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* controlled consistent spacing */
+    max-width: 1200px; /* control overall width */
+    margin: 0 auto; /* center the entire section */
+    padding: 20px; /* breathing space */
+}
+
+.project-rect{
+  width:100%;
+  height:200px;
+  border-radius:20px;
+  overflow:hidden;
+  cursor:pointer;
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1; /* take remaining space naturally */
+    max-width: 700px; /* limit width for readability */
+}
+
+.project-details{
+   display:none;
+   position:relative;
+   padding:15px;
+   border-radius:20px;
+   background-color:#808080;
+   text-align:center;
+   color:white;
+   width: 100%;
+   box-sizing: border-box;
+}
+.project-details .inside-project {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.project-box {
+    position: relative;
+    width: 100%;
+}
+
+.project-rect img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.back-btn {
+    padding: 5px 10px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+
